@@ -1,4 +1,4 @@
-def minJumps(self, arr, n):
+def minJumps( arr, n):
     # code here
     index = 0
     element = arr[0]
