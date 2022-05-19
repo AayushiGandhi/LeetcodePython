@@ -16,6 +16,12 @@ def binaryMedian(m, rowLen, columnLen):
     low = 0
     high = 10**9
 
+    for i in range(r):
+        if m[i][0] < low:
+            low = m[i][0]
+        if m[i][d - 1] > high:
+            high = m[i][d - 1]
+
     while low <= high:
         mid = (low + high) // 2
         count = 0
