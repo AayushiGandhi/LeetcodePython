@@ -1,22 +1,21 @@
-def rowWithMax1s():
-    leftMostIndex = -1
-    maxRowIndex = m
-    for index in range(m - 1, -1, -1):
-        if arr[0][index] == 1:
-            maxRowIndex = arr[0][index]
+def rowWithMax1s(mat, R, C):
+    max_row_index = 0
+    index = C - 1
 
-    for rowIndex in range(1, n):
-        if arr[rowIndex][leftMostIndex - 1] == 1:
-            while arr[rowIndex][leftMostIndex - 1] != 0:
-                leftMostIndex -= 1
-            leftMostIndex -= 1
-            maxRowIndex = rowIndex
+    for i in range(R):
+        while index >= 0 and mat[i][index] == 1:
+            index -= 1
+            max_row_index = i
+    if max_row_index == 0 and mat[0][C - 1] == 0:
+        return -1
 
-    return maxRowIndex
+    return max_row_index
 
 
 if __name__ == "__main__":
-    arr = [[0, 1, 1, 1], [0, 0, 1, 1], [1, 1, 1, 1], [0, 0, 0, 0]]
-    n = 3
-    m = 9
-    print(rowWithMax1s())
+    mat = [[0, 0, 0, 0],
+           [0, 1, 1, 1],
+           [1, 1, 1, 1],
+           [0, 0, 0, 0]]
+    print("Index of row with maximum 1s is",
+          rowWithMax1s(mat, 4, 4))
