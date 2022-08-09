@@ -1,5 +1,5 @@
 #https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
-#https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
+#https://www.youtube.com/watch?v=UcCBdYQU2cU&ab_channel=CooperCodes
 # Time complexity: O(N)
 
 
