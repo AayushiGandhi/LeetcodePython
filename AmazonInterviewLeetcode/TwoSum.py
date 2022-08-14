@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/two-sum/submissions/
+#https://leetcode.com/problems/two-sum/discuss/1378064/C%2B%2BJavaPython-HashMap-Two-pointers-Solutions-Clean-and-Concise
+#Time: O(N)
+#Space: O(N)
 
 class Solution:
     def twoSum(self, nums, target):
