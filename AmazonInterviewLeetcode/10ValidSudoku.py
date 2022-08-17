@@ -1,4 +1,4 @@
-# Time: O(1) : ading to hashset is O(1) nd checking duplicates is also O(1)
+# Time: O(1) i.e. O(9^2): ading to hashset is O(1) nd checking duplicates is also O(1)
 # https://leetcode.com/problems/valid-sudoku/
 # https://www.youtube.com/watch?v=TjFXEUCMqI8&ab_channel=NeetCode
 import collections
