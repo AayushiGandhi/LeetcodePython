@@ -1,4 +1,7 @@
 # Definition for singly-linked list.
+#https://leetcode.com/problems/merge-k-sorted-lists/
+#https://www.youtube.com/watch?v=q5a5OiGbT6Q&t=63s&ab_channel=NeetCode
+#Time: O(nlogk)
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
